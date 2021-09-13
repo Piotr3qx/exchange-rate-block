@@ -1,0 +1,47 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.exchangerate {
+	background-color: #28303d;
+	padding: 1.875rem;
+	color: #fff;
+
+	.exchangerate__date-picker {
+		border-color: #fff;
+		margin-left: 0;
+	}
+}
+
+.exchangerate__values {
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(8.125rem, 1fr) );
+	border-bottom: 1px solid rgba(255, 255, 255, .5);
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+	grid-gap: .5rem;
+}
+
+.exchangerate__label {
+	font-size: 1rem;
+	display: block;
+}
+
+.exchangerate__value {
+	display: block;
+	font-size: 1.375rem;
+}
+
+.exchangerate__is-error {
+
+	.exchangerate__error {
+		margin-top: 1rem;
+		background-color: #e4d1d1;
+	    color: #28303d;
+	    padding: 1rem;
+	}
+}
+
