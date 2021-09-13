@@ -67,7 +67,7 @@ if( !class_exists( 'Exchange_Rate' ) ) {
 		public function render_my_callback($args)
 		{
 			$currency = $args["currency"];
-			$today = $this->get_yesterday_day();
+			$today = $this->get_today_day();
 			$last_working_day = $this->get_last_working_day();
 
 			$exchange_rate_response = $this->get_rate_data($currency, $last_working_day);
@@ -109,7 +109,7 @@ if( !class_exists( 'Exchange_Rate' ) ) {
 			return $content;
 		}
 
-		public function get_yesterday_day() {
+		public function get_today_day() {
 			return date("Y-m-d");
 		}
 
